@@ -14,18 +14,6 @@ app.get("/", function (req, res) {
 
 app.use("/paletas", route);
 
-// // GET FIND ALL
-// app.get("/paletas/find-paletas", (req, res) => {
-//   res.send(paletas);
-// });
-
-// // GET FIND BY ID
-// app.get("/paletas/find-paletas/:id", (req, res) => {
-//   const idParam = req.params.id;
-//   const chosenPaleta = paletas.find((paleta) => paleta.id == idParam);
-//   res.send(chosenPaleta);
-// });
-
 app.listen(port, () => {
   console.log(`Servidor esta rodando em http://localhost:${port}`);
 });
